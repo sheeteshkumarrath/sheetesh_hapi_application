@@ -3,10 +3,9 @@
 pipeline {
 
     agent {
-        //docker {
-            //image 'node:carbon'
-        docker.dockerfile{
-            args '-u root'
+        docker {
+            image 'node:carbon'
+            args '-u root'{
           
         //}
    // }
@@ -30,4 +29,4 @@ pipeline {
     }
 }
     }
-}
+    }}
