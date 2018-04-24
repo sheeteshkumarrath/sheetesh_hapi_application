@@ -1,7 +1,7 @@
 {
   "name": "hello",
   "version": "1.0.0",
-  "description": "",
+  "description": "Running App Environment in Docker Container",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
