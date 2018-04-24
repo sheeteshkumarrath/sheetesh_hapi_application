@@ -7,7 +7,7 @@
     "start": "node app.js",
     "test": "NODE_ENV=test node node_modules/lab/bin/lab -v -L -C -D"
   },
-  "author": "Sheetesh Kumar Rath",
+  "author": "Sheetesh Kumar Rath <sheeteshkumarrath@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "hapi": "^17.3.1"
