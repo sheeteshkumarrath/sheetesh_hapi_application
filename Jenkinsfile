@@ -21,7 +21,7 @@ pipeline {
                 echo 'Testing...'
 //                sh 'npm test'
  //               sh 'test mocha'
-                sh 'npm run test -- --grep whatever'
+                sh 'npm run test -- --grep mocha'
             }
         }
     }
