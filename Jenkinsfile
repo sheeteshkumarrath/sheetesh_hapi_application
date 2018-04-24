@@ -3,17 +3,20 @@
 pipeline {
 
     agent {
-        docker {
-            image 'node:carbon'
+        //docker {
+            //image 'node:carbon'
+        docker.image 'node:carbon'{
             args '-u root'
-        }
-    }
+          
+        //}
+   // }
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building...'
                 sh 'npm install'
+
             }
         }
         stage('Test') {
@@ -26,3 +29,4 @@ pipeline {
         }
     }
 }
+    }
