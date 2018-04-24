@@ -10,10 +10,10 @@
   "author": "Sheetesh Kumar Rath",
   "license": "MIT",
   "dependencies": {
-    "hapi": "^16.4.1"
+    "hapi": "^17.3.1"
   },
   "devDependencies": {
-    "code": "^4.0.0",
-    "lab": "^14.3.2"
+    "code": "^5.2.0",
+    "lab": "^15.4.1"
   }
 }
