@@ -19,9 +19,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-#                sh 'npm test'
+//                sh 'npm test'
                 sh 'test mocha'
-#                sh 'npm run test -- --grep whatever'
+//                sh 'npm run test -- --grep whatever'
             }
         }
     }
