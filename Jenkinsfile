@@ -1,15 +1,15 @@
 #!/usr/bin/env groovy
 
+pipeline {
 
-
-    agent {
+   // agent {
         docker {
             image 'node:carbon'
             args '-u root'{
           
-        //}
-   // }
-pipeline {
+        }
+    }
+
     stages {
         stage('Build') {
             steps {
@@ -28,5 +28,5 @@ pipeline {
         }
     }
 }
-    }
-    }}
+    //}
+    
