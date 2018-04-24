@@ -1,11 +1,9 @@
 #!/usr/bin/env groovy
-
 pipeline {
-
     agent {
         docker {
             image 'node:carbon'
-            args '-u root'{
+            args '-u root'
           
         }
     }
