@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "NODE_ENV=test node node_modules/lab/bin/lab -v -L -C -D"
+ #   "test": "NODE_ENV=test node node_modules/lab/bin/lab -v -L -C -D"
+      "test": "NODE_ENV=test mocha
   },
   "author": "Sheetesh Kumar Rath <sheeteshkumarrath@gmail.com>",
   "license": "MIT",
