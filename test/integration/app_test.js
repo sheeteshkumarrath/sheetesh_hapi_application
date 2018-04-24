@@ -6,32 +6,32 @@ const Server = require('../../app.js');
 
 lab.experiment('Basic HTTP Tests', () => {
 
-    lab.test('Greets /hello/homer} ', (done) => {
+    lab.test('Greets /hello/sheetesh} ', (done) => {
 
         const options = {
             method: 'GET',
-            url: '/hello/Homer'
+            url: '/hello/Sheetesh'
         };
 
         Server.inject(options, ( response ) => {
 
             Code.expect(response.statusCode).to.equal(200);
-            Code.expect(response.result).to.equal('Hello, Homer!');
+            Code.expect(response.result).to.equal('Hello, Sheetesh!');
             done();
         });
     });
 
-    lab.test('Greets /hello/Homer%20Simpson} ', (done) => {
+    lab.test('Greets /hello/Sheetesh%20Rath} ', (done) => {
 
         const options = {
             method: 'GET',
-            url: '/hello/Homer%20Simpson'
+            url: '/hello/Sheetesh%20Rath'
         };
 
         Server.inject(options, ( response ) => {
 
             Code.expect(response.statusCode).to.equal(200);
-            Code.expect(response.result).to.equal('Hello, Homer Simpson!');
+            Code.expect(response.result).to.equal('Hello, Sheetesh Rath!');
             done();
         });
     });
