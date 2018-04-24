@@ -12,7 +12,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'npm install'
+                //sh 'npm install'
+                sh 'apt-get install -y npm'
+                sh 'node app.js'
 
             }
         }
